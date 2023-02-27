@@ -1,12 +1,13 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 
-const Header = () => {
+class Header extends React.Component {
 
-    return (
-        <div className="header">
+    render() {
+        return (
             <h1>Gallery of Horns</h1>
-        </div>
-    )
+        )
+    }
 }
-
+ 
 export default Header;
