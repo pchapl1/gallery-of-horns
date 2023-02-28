@@ -1,32 +1,9 @@
-.horned-beast {
-    border: 2px solid black;
-    border-radius: .3rem;
-    width: 60%;
-    margin: auto;
-    margin-top: 2rem;
+.card {
+    margin: .5rem;
 }
 
-.horned-beast-header {
-    width: 70%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.horned-beast-header h3{
-    font-size: 48px;
-}
-
-.horned-beast-description {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-img {
-    border: 2px solid black;
-    border-radius: .5rem;
-    width: 300px;
-    height: 200px;
+.card-img {
+    width: 288px;
+    height: 300px;
+    border: 1px solid black !important;
 }
