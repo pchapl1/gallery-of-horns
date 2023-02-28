@@ -74,12 +74,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Estimate of time needed to complete: 10 minutes
 
-Start time: _____
+Start time: 12
 
-Finish time: _____
+Finish time: 12:10
 
-Actual time needed to complete: _____
-
+Actual time needed to complete: 10 minutes
 
 ### Number and name of feature: Allow Users to Favorite Individual Beasts
 
@@ -99,6 +98,6 @@ Estimate of time needed to complete: 45 minutes
 
 Start time: 12:40
 
-Finish time: _____
+Finish time: 1:05
 
-Actual time needed to complete: _____
+Actual time needed to complete: 25 minutes
