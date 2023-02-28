@@ -1,4 +1,5 @@
 import React from "react";
+import VoteCounter from "./VoteCounter";
 import "./HornedBeast.css"
 
 class HornedBeast extends React.Component {
@@ -14,15 +15,16 @@ class HornedBeast extends React.Component {
         return (
             <>
 
-            <div className="horned-beast">
-                <div className="horned-beast-header">
-                    <h3>{title}</h3>
-                    <img src={imageUrl} alt="this an alt text" />
+                <div className="horned-beast">
+                    <div className="horned-beast-header">
+                        <h3>{title}</h3>
+                        <img src={imageUrl} alt="this an alt text" />
+                    </div>
+                    <div className="horned-beast-description">
+                        <p>{description}</p>
+                    </div>
+                <VoteCounter />
                 </div>
-                <div className="horned-beast-description">
-                    <p>{description}</p>
-                </div>
-            </div>
             </>
         )
     }

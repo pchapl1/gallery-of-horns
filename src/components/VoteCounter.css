@@ -1,0 +1,5 @@
+.vote-counter {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
