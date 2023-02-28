@@ -1,6 +1,7 @@
 import React from "react";
 import "./HornedBeast.css"
 import { FaHeart } from 'react-icons/fa';
+import Card from 'react-bootstrap/Card';
 
 
 class HornedBeast extends React.Component {
@@ -23,6 +24,7 @@ class HornedBeast extends React.Component {
         })
     }
 
+
     render () {
 
         const title = this.props.title
@@ -32,8 +34,16 @@ class HornedBeast extends React.Component {
 
         return (
             <>
+                <Card style={{ width: '18rem' }}>
+                <Card.Img onClick={this.handleLikes} src={imageUrl} alt="this an alt text" />
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>{description}</Card.Text>
+                    <Card.Text>{this.state.likes} <FaHeart /></Card.Text>
 
-                <div className="horned-beast">
+                </Card.Body>
+                </Card>
+                {/* <div className="horned-beast">
                     <div className="horned-beast-header">
                         <h3>{title}</h3>
                         <img onClick={this.handleLikes} src={imageUrl} alt="this an alt text" />
@@ -41,8 +51,8 @@ class HornedBeast extends React.Component {
                     <div className="horned-beast-description">
                         <p>{description}</p>
                     </div>
-                    <p>{this.state.likes} <FaHeart /></p>
-                </div>
+                    <p></p>
+                </div> */}
             </>
         )
     }
