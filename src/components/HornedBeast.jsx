@@ -15,9 +15,13 @@ class HornedBeast extends React.Component {
             <>
 
             <div className="horned-beast">
-                <h3>{title}</h3>
-                <img src={imageUrl} alt="this an alt text" />
-                <p>{description}</p>
+                <div className="horned-beast-header">
+                    <h3>{title}</h3>
+                    <img src={imageUrl} alt="this an alt text" />
+                </div>
+                <div className="horned-beast-description">
+                    <p>{description}</p>
+                </div>
             </div>
             </>
         )
