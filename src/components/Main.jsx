@@ -37,7 +37,7 @@ class Main extends React.Component {
             <div className="main">
                 {
                     data.map((item, index) => {
-                        return <HornedBeast key={item.id} title = {item.title} imageUrl = {item.image_url} description = {item.description} />
+                        return <HornedBeast key={index} title = {item.title} imageUrl = {item.image_url} description = {item.description} />
                     })
                 }
             </div>
