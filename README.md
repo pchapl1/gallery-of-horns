@@ -85,11 +85,11 @@ Actual time needed to complete: _____
 
 Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 12:15
 
-Finish time: _____
+Finish time: 12:35
 
-Actual time needed to complete: _____
+Actual time needed to complete: 20 minutes
 
 
 
