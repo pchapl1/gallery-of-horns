@@ -38,8 +38,6 @@ class Main extends React.Component {
             "horns": 1
         }]
 
-
-
         return (
             <div className="main">
                 {
@@ -47,7 +45,6 @@ class Main extends React.Component {
                         return <HornedBeast key={item.id} title = {item.title} imageUrl = {item.image_url} description = {item.description} />
                     })
                 }
-
             </div>
         )
     }
