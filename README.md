@@ -105,10 +105,12 @@ Actual time needed to complete: 25 minutes
 
 ### Number and name of feature: Display a Modal
 
-Estimate of time needed to complete: 1 hour
+Estimate of time needed to complete: 2 hours
 
-Start time: 
+Start time: 12
 
 Finish time: 
 
 Actual time needed to complete: 
+
+

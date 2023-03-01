@@ -16,13 +16,24 @@ class HornedBeast extends React.Component {
         
     
     }
+
+    handleClick = () => {
+
+        this.handleLikes()
+
+        this.props.handleOpenModal(this.props)
+
+    }
     
-    handleLikes = (e)=> {
+    handleLikes = ()=> {
         console.log('clicked')
         this.setState({
             likes: this.state.likes + 1
         })
     }
+
+    
+
 
 
     render () {
@@ -35,7 +46,7 @@ class HornedBeast extends React.Component {
         return (
             <>
                 <Card style={{ width: '18rem' }}>
-                <Card.Img onClick={this.handleLikes} src={imageUrl} alt="this an alt text" />
+                <Card.Img onClick={this.handleClick} src={imageUrl} alt="this an alt text" />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{description}</Card.Text>
