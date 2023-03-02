@@ -5,10 +5,6 @@ import "./FilterForm.css"
 
 class FilterForm extends React.Component {
 
-    constructor(props) {
-        super(props)
-
-    }
     handleClick = (event) => {
         event.preventDefault()
         let filterData = document.getElementById("filter")
