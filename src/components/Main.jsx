@@ -8,13 +8,13 @@ class Main extends React.Component {
     render (){
 
         // this is passed from App Component
-        const data = this.props.data
+        const filteredData = this.props.filteredData
         const handleOpenModal = this.props.handleOpenModal
 
         return (
             <div className="main">
                 {
-                    data.map((item, index) => {
+                    filteredData.map((item, index) => {
                         return <HornedBeast key={index} handleOpenModal = {handleOpenModal} title = {item.title} imageUrl = {item.image_url} description = {item.description} />
                     })
                 }

@@ -7,7 +7,6 @@ class SelectedBeast extends React.Component {
 
     render() {
 
-
         const show = this.props.show
 
         const handleClose = this.props.handleClose
