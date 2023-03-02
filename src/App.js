@@ -3,6 +3,8 @@ import Header from "./components/Header"
 import Main from "./components/Main"
 import Footer from "./components/Footer"
 import SelectedBeast from "./components/SelectedBeast"
+import FilterForm from "./components/FilterForm";
+import Container from 'react-bootstrap/Container';
 import data from "./data.json";
 
 class App extends React.Component {
@@ -12,7 +14,9 @@ class App extends React.Component {
 
     this.state = {
       imageClicked : "",
-      isModalOpen : false
+      isModalOpen : false,
+      data : data,
+      filteredData : data
     }
   }
 
@@ -33,16 +37,28 @@ class App extends React.Component {
     })
   }
 
+  handleFilter = (filterBy) => {
+
+    let filteredData = data.filter(beast => beast.horns === Number(filterBy) )  
+
+    console.log(data)
+    this.setState({
+      filteredData : filteredData
+    })
+  }
+
   render() {
-
-
 
     return (
       <>
         <Header />
-        <Main data = {data} handleOpenModal = {this.handleOpenModal}/>
+        <Container>
+        <FilterForm handleFilter = {this.handleFilter} />
+        <Main filteredData = {this.state.filteredData} handleOpenModal = {this.handleOpenModal}/>
         <Footer />
         <SelectedBeast image = {this.state.imageClicked} show = {this.state.isModalOpen} handleClose = {this.handleCloseModal}/>
+        </Container>
+          
       </>
 
     )
